@@ -8,9 +8,9 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<div class="container">
+<div class="container | flow">
 	<!-- * Hero section -->
-	<section class="hero">
+	<section class="hero | flow">
 		<h1>Learn to code by watching others</h1>
 		<p>
 			See how experienced developers solve problems in real-time. Watching scripted tutorials is
@@ -26,4 +26,21 @@
 </div>
 
 <style>
+	section {
+		text-align: center;
+		padding-inline: theme('padding.6');
+	}
+
+	.hero {
+		color: white;
+	}
+
+	h1 {
+		font-weight: 700;
+		font-size: theme('fontSize.3xl');
+	}
+
+	p {
+		--flow-space: 1.25rem;
+	}
 </style>

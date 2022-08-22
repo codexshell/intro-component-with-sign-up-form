@@ -8,12 +8,13 @@
 
 <style>
 	:global(body) {
-		min-height: 100vh;
 		background-image: url('/bg-intro-mobile.png');
 		background-color: theme('colors.p-red');
-		display: grid;
-		place-content: center;
 		font-family: theme('fontFamily.poppins');
 		font-size: theme('fontSize.base');
+		min-height: 100vh;
+		padding-block: theme('padding.20');
+		display: grid;
+		place-content: center;
 	}
 </style>
