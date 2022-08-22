@@ -4,8 +4,8 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Intro component with sign-up form</title>
+	<meta name="description" content="Svelte sign-up form component" />
 </svelte:head>
 
 <div class="container | flow">
