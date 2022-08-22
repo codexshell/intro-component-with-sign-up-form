@@ -43,4 +43,8 @@
 	p {
 		--flow-space: 1.25rem;
 	}
+
+	.signup {
+		--flow-space: 4rem;
+	}
 </style>
