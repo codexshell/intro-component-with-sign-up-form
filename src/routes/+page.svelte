@@ -8,19 +8,22 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	<div class="left">
+<div class="container">
+	<!-- * Hero section -->
+	<section class="hero">
 		<h1>Learn to code by watching others</h1>
 		<p>
 			See how experienced developers solve problems in real-time. Watching scripted tutorials is
 			great, but understanding how developers think is invaluable.
 		</p>
+	</section>
+
+	<!-- * Signup section -->
+	<section class="signup">
 		<Trial />
 		<Signup />
-	</div>
-	<div class="right" />
-</section>
+	</section>
+</div>
 
 <style>
-	
 </style>
