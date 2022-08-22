@@ -40,6 +40,7 @@
 
 <style>
 	form {
+    --flow-space: 1.5rem;
 		background-color: white;
 		padding-block: theme('padding.6');
 		border-radius: theme('borderRadius.xl');
@@ -93,5 +94,10 @@
 		font-size: theme('fontSize.xs');
 		padding-inline: theme('padding.8');
 		color: theme('colors.n-grayish-blue');
+	}
+
+	p span {
+		color: theme('colors.p-red');
+		font-weight: 700;
 	}
 </style>
