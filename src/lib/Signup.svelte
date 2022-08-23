@@ -126,7 +126,7 @@
 		width: 85%;
 		padding: theme('padding.4');
 		border-radius: theme('borderRadius.md');
-		padding-right: theme('padding.10');
+		padding-right: theme('padding.12');
 	}
 
 	input::placeholder {
@@ -136,9 +136,27 @@
 	label span {
 		content: url('/icon-error.svg');
 		position: absolute;
-		right: 2rem;
-		top: 2rem;
+		right: 2.5rem;
+		top: 1rem;
 		display: none;
+	}
+
+	@media (min-width: theme('screens.md')) {
+		label span {
+			right: 3rem;
+		}
+	}
+
+	@media (min-width: theme('screens.lg')) {
+		label span {
+			right: 4rem;
+		}
+	}
+
+	@media (min-width: theme('screens.xl')) {
+		label span {
+			right: 3.5rem;
+		}
 	}
 
 	.error {

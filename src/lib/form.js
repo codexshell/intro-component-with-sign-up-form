@@ -36,13 +36,13 @@ export function showError(event) {
 
 // function to check if all elements provided in an array validate
 export function allValid(elements) {
-  let result = elements.every((element) => element.checkValidity());
+	let result = elements.every((element) => element.checkValidity());
 
-  if (result) {
-    return true;
-  } else {
-    return false;
-  }
+	if (result) {
+		return true;
+	} else {
+		return false;
+	}
 }
 
 export function showErrorArray(element) {
@@ -61,6 +61,8 @@ export function textValidate(element) {
 
 	// set styling appropriately
 	element.style.outline = 'solid hsl(0, 100%, 74%) 0.125rem';
+	// show error icon
+	element.parentNode.children[0].style.display = 'block';
 
 	if (element.validity.valueMissing) {
 		span.innerText = `${name} cannot be empty`;
@@ -70,8 +72,11 @@ export function textValidate(element) {
 export function emailValidate(element) {
 	const span = element.parentNode.nextElementSibling;
 	const name = element.placeholder.split(' ')[0];
+
 	// set styling appropriately
 	element.style.outline = 'solid hsl(0, 100%, 74%) 0.125rem';
+	// show error icon
+	element.parentNode.children[0].style.display = 'block';
 
 	if (element.validity.valueMissing) {
 		span.innerText = `${name} cannot be empty`;
@@ -83,8 +88,11 @@ export function emailValidate(element) {
 export function passwordValidate(element) {
 	const span = element.parentNode.nextElementSibling;
 	const name = element.placeholder;
+
 	// set styling appropriately
 	element.style.outline = 'solid hsl(0, 100%, 74%) 0.125rem';
+	// show error icon
+	element.parentNode.children[0].style.display = 'block';
 
 	if (element.validity.valueMissing) {
 		span.innerText = `${name} cannot be empty`;
@@ -99,4 +107,6 @@ export function removeError(element) {
 	span.innerText = '';
 	// remove styling
 	element.style.outline = 'unset';
+	// remove error icon
+	element.parentNode.children[0].style.display = 'none';
 }

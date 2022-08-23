@@ -13,6 +13,7 @@
 		font-family: theme('fontFamily.poppins');
 		font-size: theme('fontSize.base');
 		min-height: 100vh;
+		min-width: 95vw;
 		padding-block: theme('padding.20');
 		display: grid;
 		place-content: center;
