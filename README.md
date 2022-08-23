@@ -45,6 +45,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- [tailwindcss](https://tailwindcss.com/) - A CSS framework
 - [Svelte](https://svelte.dev/) - JS library
 - [SvelteKit](https://kit.svelte.dev/) - Svelte framework
 
