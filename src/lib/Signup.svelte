@@ -96,6 +96,18 @@
 		box-shadow: 0 0.5rem 0 0 rgba(0, 0, 0, 0.2);
 	}
 
+	@media (min-width: theme('screens.sm')) {
+		form {
+			padding-block: theme('padding.8');
+		}
+	}
+
+	@media (min-width: theme('screens.md')) {
+		form {
+			padding-block: theme('padding.11');
+		}
+	}
+
 	div {
 		--flow-space: 1rem;
 		position: relative;
@@ -137,6 +149,18 @@
 		text-align: end;
 		padding-right: theme('padding.7');
 		font-weight: 600;
+	}
+
+	@media (min-width: theme('screens.sm')) {
+		.error {
+			padding-right: theme('padding.10');
+		}
+	}
+
+	@media (min-width: theme('screens.lg')) {
+		.error {
+			padding-right: theme('padding.14');
+		}
 	}
 
 	p {

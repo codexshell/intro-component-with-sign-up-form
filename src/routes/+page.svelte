@@ -26,13 +26,55 @@
 </div>
 
 <style>
+	@media (min-width: theme('screens.xl')) {
+		.container {
+			display: flex;
+			padding-inline: theme('padding.24');
+			gap: theme('gap.6');
+		}
+	}
+
 	section {
 		text-align: center;
 		padding-inline: theme('padding.6');
 	}
 
+	@media (min-width: theme('screens.sm')) {
+		section {
+			padding-inline: theme('padding.28');
+		}
+	}
+
+	@media (min-width: theme('screens.md')) {
+		section {
+			padding-inline: theme('padding.36');
+		}
+	}
+
+	@media (min-width: theme('screens.lg')) {
+		section {
+			padding-inline: theme('padding.48');
+		}
+	}
+
+	@media (min-width: theme('screens.xl')) {
+		section {
+			padding: 0;
+		}
+	}
+
 	.hero {
 		color: white;
+	}
+
+	@media (min-width: theme('screens.xl')) {
+		.hero {
+			flex: 1 1 50%;
+			text-align: start;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
 	}
 
 	h1 {
@@ -40,11 +82,42 @@
 		font-size: theme('fontSize.3xl');
 	}
 
+	@media (min-width: theme('screens.sm')) {
+		h1 {
+			font-size: theme('fontSize.4xl');
+		}
+	}
+
+	@media (min-width: theme('screens.md')) {
+		h1 {
+			font-size: theme('fontSize.5xl');
+		}
+	}
+
 	p {
 		--flow-space: 1.25rem;
 	}
 
+	@media (min-width: theme('screens.lg')) {
+		p {
+			padding-inline: theme('padding.16');
+		}
+	}
+
+	@media (min-width: theme('screens.xl')) {
+		p {
+			padding: 0;
+		}
+	}
+
 	.signup {
 		--flow-space: 4rem;
+	}
+
+	@media (min-width: theme('screens.xl')) {
+		.signup {
+			flex: 1 1 50%;
+			--flow-space: ;
+		}
 	}
 </style>
